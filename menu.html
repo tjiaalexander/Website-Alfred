@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 15px;
+            background: #007bff;
+            color: white;
+        }
+
+        .menu {
+            padding: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: black;
+            background: white;
+            border-radius: 5px;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h3>📦 Daftar Produk</h3>
+</div>
+
+<div class="menu" id="menuList"></div>
+
+<script>
+let menu = document.getElementById("menuList");
+
+for (let i = 1; i <= 20; i++) {
+    let link = document.createElement("a");
+    link.href = "produk/produk" + i + ".html"; // kalau pakai folder
+    link.target = "konten";
+    link.textContent = "Produk " + i;
+
+    menu.appendChild(link);
+}
+</script>
+
+</body>
+</html>

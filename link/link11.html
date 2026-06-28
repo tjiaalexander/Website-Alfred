@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link 11</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .header {
+            background: #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .back-btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            background: white;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .back-btn:hover { background: #ddd; }
+
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 { margin-bottom: 10px; }
+        p { font-size: 16px; color: #555; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="back-btn" onclick="goHome()">⬅ Home</button>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2>🧾 Link 11</h2>
+        <p>Konten halaman Link 11 (bebas). Bisa kamu ganti sesuai kebutuhan.</p>
+    </div>
+</div>
+
+<script>
+function goHome(){
+    parent.frames["konten"].location.href = "../home.html";
+}
+</script>
+
+</body>
+</html>

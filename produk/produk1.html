@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produk 1</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin: 0; }
+        .header { background: #333; padding: 15px 20px; text-align: left; }
+        .back-btn { padding: 8px 15px; border-radius: 20px; background: white; border: none; }
+        .container { margin-top: 30px; }
+        img { width: 200px; }
+        .buy-btn { padding: 10px 20px; background: green; color: white; border-radius: 20px; border: none; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <button class="back-btn" onclick="goHome()">⬅ Home</button>
+</div>
+
+<div class="container">
+    <h2>Produk 1 - Sepatu Sneakers</h2>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.Msfl3R2vyy0R00ocXaFtTwHaHa?pid=Api&P=0&h=180">
+    <p>Sepatu nyaman untuk aktivitas sehari-hari.</p>
+    <p><b>Harga: Rp100.000</b></p>
+    <button class="buy-btn" onclick="beli()">Beli</button>
+</div>
+
+<script>
+let nomor = 1;
+function goHome(){ parent.frames["konten"].location.href = "../home.html"; }
+function beli(){ alert("Produk " + nomor + " ditambahkan!"); }
+</script>
+
+</body>
+</html>
